@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app=myApp>
+<html ng-app=app>
     <head>
     	<meta charset='utf-8'/>
     	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>    	        
@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="css/cerulean.min.css">
         <script src="js/angular.js"></script>
     </head>
-	<body ng-controller="MainController">
-
+	<body ng-controller="IndexController">
 
 		<div id='page'>			
 				<div id='menu' class="navbar navbar-default navbar-fixed-top">				
@@ -40,9 +39,6 @@
 								<li data-target='#theCarousel' data-slide-to='2'></li>
 								<li data-target='#theCarousel' data-slide-to='3'></li>
 							</ol>
-
-
-
 
 							<div class='carousel-inner'>
 								<div class='item active'>
@@ -79,9 +75,7 @@
 					</div>
 				</div>
 
-<div >
 
-</div>
 			<section id='main' class='col-md-8 col-sm-9'>		
 					<h1>com-mu-ni-ca-tion</h1>
 					<p class='lead'>
@@ -94,7 +88,7 @@
 		</div>
 	<script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="Controllers/IndexController.js"></script>
 
 	</body>
 </html>
