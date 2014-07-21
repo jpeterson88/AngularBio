@@ -8,8 +8,7 @@ $scope.message = "derpderperpet";
 }]);
 
 
-$('#theCarousel').carousel();
+
 
 
 }());
-
