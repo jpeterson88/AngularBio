@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app=myApp>
     <head>
     	<meta charset='utf-8'/>
-    	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-
-<script src></script>
-
-        <title>Main Page</title>
-        	<link rel="stylesheet" href="css/bootstrap.min.css">
-        	<link rel="stylesheet" href="css/site.css">
-        	<link rel="stylesheet" href="css/cerulean.min.css">
-        	<script src="js/angular.js"></script>
+    	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>    	        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/cerulean.min.css">
+        <script src="js/angular.js"></script>
     </head>
-	<body>
+	<body ng-controller="MainController">
+
 
 		<div id='page'>			
 				<div id='menu' class="navbar navbar-default navbar-fixed-top">				
@@ -43,9 +40,6 @@
 								<li data-target='#theCarousel' data-slide-to='2'></li>
 								<li data-target='#theCarousel' data-slide-to='3'></li>
 							</ol>
-
-
-
 
 
 
@@ -85,28 +79,22 @@
 					</div>
 				</div>
 
-				<section id='main' class='col-md-8 col-sm-9'>		
+<div >
+
+</div>
+			<section id='main' class='col-md-8 col-sm-9'>		
 					<h1>com-mu-ni-ca-tion</h1>
 					<p class='lead'>
-					<em>Greeting</em> is an act of communication in which human beings intentionally make their presence known to each other, to show attention to, and to suggest a type of relationship (usually cordial) or social status (formal or informal) between individuals or groups of people coming in contact with each other. Greetings sometimes are used just prior to a conversation or to greet in passing, such as on a sidewalk or trail. While greeting customs are highly culture and situation-specific and may change within a culture depending on social status and relationship, they exist in all known human cultures. Greetings can be expressed both audibly and physically, and often involve a combination of the two. This topic excludes military and ceremonial salutes but includes rituals other than gestures. A greeting can also be expressed in written communications, such as letters and emails.
+					{{message}}
 					<p>
-
 					<img src='images/building.JPG' class='pull-left img-thumbnail'/>
-			
-					<p>
-					Some epochs and cultures have had very elaborate greeting rituals, for example, greeting of a sovereign. Conversely, secret societies have often furtive or arcane greeting gestures and rituals, such as a secret handshake, which allow members to recognize each other.
-					</p>	
-
-					<p>
-						In some languages and cultures, the same word or gesture is used as both greeting and farewell. Examples are "Good day" in English, "Aloha" in Hawaiian, "Shalom" in Hebrew, "Namaste" in Hindi and "Ciao" in Italian. The bow and handshake are also used for both greeting and leave taking.
-					</p>
-
 				</section>
 
 				</section>
 		</div>
-	<script src="../jQuery/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/scripts.js"></script>
+
 	</body>
 </html>
