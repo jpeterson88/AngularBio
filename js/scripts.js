@@ -1,4 +1,4 @@
 
-var url = window.location;
+var path = window.location.pathname;
 // Will only work if string in href matches with location
-$('ul.nav a[href="'+ url.pathname +'"]').parent().addClass('active');
+$('ul.nav a[href="'+ path +'"]').parent().addClass('active');
