@@ -1,4 +1,4 @@
-var bioApp = angular.module('phonecatApp', [
+var bioApp = angular.module('bioApp', [
   'ngRoute',
   'viewControllers'
 ]);

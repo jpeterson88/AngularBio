@@ -38,7 +38,7 @@ $scope.message = "derpderperpet";
 }]);
 
 
-$('#theCarousel').carousel();
+//$('#theCarousel').carousel();
 
 
 
