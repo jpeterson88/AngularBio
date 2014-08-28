@@ -6,14 +6,34 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/site.css">
         <link rel="stylesheet" href="css/cerulean.min.css">
-
-
-
     </head>
 
-    <div ng-include="'views/header.html'"></div>
+	<body id="page">
 
-	<body>
+        <div class="container-fluid row headerpadbottom">
+            <div id='menu' class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderController as header">           
+                <div class="navbar-header">
+                  <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navcol">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">JP</a>
+                </div>
+                <div class="navbar-collapse collapse padleftdefault" id="navcol">
+                    <ul class='nav navbar-nav navbar-left'>
+                        <li class='nav {active : header.isSelected(1)}' ><a href='#/about' ng-click="header.selectTab(1)">About</a></li>
+                        <li class='dropdown {active : header.isSelected(2)}'>
+                            <a  class="dropdown-toggle" data-toggle="dropdown">Interests <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/gaming" ng-click="header.selectTab(2)">Gaming</a></li>
+                                <li><a href="#/photography">Photography</a></li>
+                                <li><a href="#/software">Software Development</a></li>                                    
+                            </ul>
+                        </li>
+                        <li class='nav {active : header.isSelected(3)}'><a href='#/contact' ng-click="header.selectTab(3)">Contact</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
 
     	<div class="view-container">
           <div ng-view class="view-frame"></div>
@@ -24,7 +44,7 @@
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="js/app.js"></script>
         <script src="controllers/controllers.js"></script>
-                <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

@@ -1,15 +1,12 @@
 "use strict";
 
 var bioApp = angular.module('bioApp', [
-  'ngRoute',
-  'viewControllers'
+  'ngRoute'
 ]);
 
 
-bioApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/', {
+bioApp.config(function ($routeProvider) {
+    $routeProvider.when('/', {
         templateUrl: 'views/about.html',
         controller: 'AboutController'
       }).
@@ -36,4 +33,4 @@ bioApp.config(['$routeProvider',
       otherwise({
         redirectTo: '/about'
       });
-    }]);
+    });
