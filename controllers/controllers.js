@@ -11,6 +11,8 @@ $scope.message = "derpderperpet";
 
 
 viewControllers.controller('GamingController', ['$scope', function($scope){
+
+	$scope.controllername = 'gaming'
 }]);
 
 
@@ -29,12 +31,12 @@ $scope.isSelected = function(checkTab){
 }]);
 
 viewControllers.controller('PhotographyController', ['$scope', function($scope){
-$scope.message = "derpderperpet";
+$scope.controllername = 'photography'
 }]);
 
 
 viewControllers.controller('SoftwareController', ['$scope', function($scope){
-$scope.message = "derpderperpet";
+$scope.controllername = 'software'
 }]);
 
 
