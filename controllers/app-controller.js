@@ -2,19 +2,19 @@
 
 
 
-var app = angular.module('app',[]);
+var bioApp = angular.module('bioApp',[]);
 
 
-app.controller('AboutController', ['$scope', function($scope){
+bioApp.controller('AboutController', ['$scope', function($scope){
 $scope.message = "derpderperpet";
 }]);
 
 
-app.controller('GamingController', ['$scope', function($scope){
+bioApp.controller('GamingController', ['$scope', function($scope){
 }]);
 
 
-app.controller('HeaderController', ['$scope', function($scope){
+bioApp.controller('HeaderController', ['$scope', function($scope){
 $scope.tab = 1;
 
 $scope.selectTab = function(setTab){
@@ -28,12 +28,12 @@ $scope.isSelected = function(checkTab){
 
 }]);
 
-app.controller('PhotographyController', ['$scope', function($scope){
+bioApp.controller('PhotographyController', ['$scope', function($scope){
 $scope.message = "derpderperpet";
 }]);
 
 
-app.controller('SoftwareController', ['$scope', function($scope){
+bioApp.controller('SoftwareController', ['$scope', function($scope){
 $scope.message = "derpderperpet";
 }]);
 
