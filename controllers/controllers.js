@@ -10,6 +10,10 @@ bioApp.controller('GamingController', function($scope){
 	$scope.controllername = 'gaming'
 });
 
+bioApp.controller('ContactController', function($scope){
+
+	$scope.controllername = 'Contact Us'
+});
 
 bioApp.controller('HeaderController', function($scope){
 $scope.tab = 1;
