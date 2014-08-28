@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html ng-app=bioApp>
     <head>
-    	    	<meta charset='utf-8'/>
+    	<meta charset='utf-8'/>
     	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>    	        
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/site.css">
         <link rel="stylesheet" href="css/cerulean.min.css">
-<script src="js/angular.js"></script>
+  		<script src="bower_components/angular/angular.js"></script>
+ 	    <script src="bower_components/angular-route/angular-route.js"></script>
+
     </head>
 
     <div ng-include="'views/header.html'"></div>
-	<body >
+	<body>
 
-
+		<div ng-view class="view-frame"></div>
 		
-
-		
-
 	<script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
