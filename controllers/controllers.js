@@ -17,10 +17,27 @@ bioApp.controller('ContactController', function($scope){
 
 bioApp.controller('HeaderController', function($scope, $location){
 
- 	$scope.isActive = function (path) {
+ 	$scope.isActive = function isActive(path) {
 
         return $location.path().substr(0, path.length) == path;
     };
+
+
+    $scope.areItemsActive = function (paths){
+    	for(i=0;i<paths.length;i++){
+    			var active = $scope.isActive(paths[i]);
+    			if(active){
+    				return true;
+    		}
+
+    	};
+    		
+    };
+
+
+
+
+
 });
 
 bioApp.controller('PhotographyController', function($scope){
