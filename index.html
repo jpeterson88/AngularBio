@@ -11,7 +11,7 @@
 	<body id="page">
 
         <div class="container-fluid row headerpadbottom">
-            <div id='menu' class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderController as header">           
+            <div id='menu' class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderController">           
                 <div class="navbar-header">
                   <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navcol">
                     <span class="glyphicon glyphicon-chevron-down"></span>
@@ -20,23 +20,23 @@
                 </div>
                 <div class="navbar-collapse collapse padleftdefault" id="navcol">
                     <ul class='nav navbar-nav navbar-left'>
-                        <li class='nav {active : header.isSelected(1)}' ><a href='#/about' ng-click="header.selectTab(1)">About</a></li>
-                        <li class='dropdown {active : header.isSelected(2)}'>
+                        <li class="nav {'active' : isActive('/about')}" ><a href='#/about' ng-click="selectTab(1)">About</a></li>
+                        <li class="dropdown">
                             <a  class="dropdown-toggle" data-toggle="dropdown">Interests <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#/gaming" ng-click="header.selectTab(2)">Gaming</a></li>
-                                <li><a href="#/photography">Photography</a></li>
-                                <li><a href="#/software">Software Development</a></li>                                    
+                                <li class="{'active' : isActive('/gaming')}"><a href="#/gaming">Gaming</a></li>
+                                <li class="{'active' : isActive('/photography')}"><a href="#/photography">Photography</a></li>
+                                <li class="{'active' : isActive('/software')}"><a href="#/software">Software Development</a></li>                                    
                             </ul>
                         </li>
-                        <li class='nav {active : header.isSelected(3)}'><a href='#/contact' ng-click="header.selectTab(3)">Contact</a></li>
+                        <li class="nav {'active' : isActive('/contact')}"><a href='#/contact'>Contact</a></li>
                     </ul>
                 </div>
-            </div>  
+            </div>
         </div>
 
-    	<div class="view-container">
-          <div ng-view class="view-frame"></div>
+    	<div class="view-container container-fluid defaultpadtop">
+          <div ng-view class="view-frame defaultpadleft defaultpadright"></div>
         </div>
 
 
@@ -46,5 +46,6 @@
         <script src="controllers/controllers.js"></script>
         <script src="js/jquery-2.1.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
 	</body>
 </html>

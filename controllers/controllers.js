@@ -15,20 +15,34 @@ bioApp.controller('ContactController', function($scope){
 	$scope.controllername = 'Contact Us'
 });
 
-bioApp.controller('HeaderController', function($scope){
-$scope.tab = 1;
+bioApp.controller('HeaderController', function($scope, $location){
 
-$scope.selectTab = function(setTab){
-	$scope.tab = setTab;
-	};
+ 	$scope.isActive = function (path) {
 
-$scope.isSelected = function(checkTab){
-	 $scope.tab === checkTab;
-	};
+        return $location.path().substr(0, path.length) == path;
+    };
 });
 
 bioApp.controller('PhotographyController', function($scope){
 $scope.controllername = 'photography'
+
+
+ $scope.myInterval = 5000;
+  $scope.slides = [
+    {
+      image: '../images/cat.JPG'
+    },
+    {
+      image: '../images/dock.JPG'
+    },
+    {
+      image: '../images/sunset.JPG'
+    },
+    {
+      image: '../images/dog2.JPG'
+    }
+  ];
+
 });
 
 
@@ -37,5 +51,5 @@ $scope.controllername = 'software'
 });
 
 
-//$('#theCarousel').carousel();
+
 
