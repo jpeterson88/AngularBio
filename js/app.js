@@ -1,7 +1,8 @@
 "use strict";
 
 var bioApp = angular.module('bioApp', [
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap'
 ]);
 
 

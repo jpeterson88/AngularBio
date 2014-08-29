@@ -27,19 +27,23 @@ bioApp.controller('PhotographyController', function($scope){
 $scope.controllername = 'photography'
 
 
- $scope.myInterval = 5000;
+ $scope.photogInterval = 5000;
   $scope.slides = [
     {
-      image: '../images/cat.JPG'
+      image: '../images/cat.JPG',
+      text: "Hollywood Cat"
     },
     {
-      image: '../images/dock.JPG'
+      image: '../images/dock.JPG',
+      text: "Big Bear Sunset"
     },
     {
-      image: '../images/sunset.JPG'
+      image: '../images/sunset.JPG',
+      text: "Desert Sunset"
     },
     {
-      image: '../images/dog2.JPG'
+      image: '../images/dog2.JPG',
+      text: "Much Shibe, wow"
     }
   ];
 
