@@ -7,12 +7,12 @@ $scope.message = "derpderperpet";
 
 bioApp.controller('GamingController', function($scope){
 
-	$scope.controllername = 'gaming'
+	$scope.controllername = 'Gaming'
 });
 
 bioApp.controller('ContactController', function($scope){
 
-	$scope.controllername = 'Contact Us'
+	$scope.controllername = 'Contact Me'
 });
 
 bioApp.controller('HeaderController', function($scope, $location){
@@ -21,27 +21,10 @@ bioApp.controller('HeaderController', function($scope, $location){
 
         return $location.path().substr(0, path.length) == path;
     };
-
-
-    $scope.areItemsActive = function (paths){
-    	for(i=0;i<paths.length;i++){
-    			var active = $scope.isActive(paths[i]);
-    			if(active){
-    				return true;
-    		}
-
-    	};
-    		
-    };
-
-
-
-
-
 });
 
 bioApp.controller('PhotographyController', function($scope){
-$scope.controllername = 'photography'
+$scope.controllername = 'Photography'
 
 
  $scope.photogInterval = 5000;
@@ -68,7 +51,54 @@ $scope.controllername = 'photography'
 
 
 bioApp.controller('SoftwareController', function($scope){
-$scope.controllername = 'software'
+	$scope.controllername = 'Software';
+
+	$scope.openTab = function() {
+    $scope.githubUrl = 'https://github.com/sincerelysleepy';
+};
+
+	$scope.frameworks = [
+	{
+		frmwrkName: "C# / .NET",
+		location: "../templates/c-sharp.html"
+	},
+		{
+		frmwrkName: "Javascript",
+		location: "../templates/javascript.html"
+	},
+		{
+		frmwrkName: "WPF",
+		location: "../templates/wpf.html"
+	},
+		{
+		frmwrkName: "WCF",
+		location: "../templates/wcf.html"
+	},
+		{
+		frmwrkName: "AngularJS",
+		location: "../templates/angular.html"
+	},	
+		{
+		frmwrkName: "HTML",
+		location: "../templates/hypertext.html"
+	},
+		{
+		frmwrkName: "TSQL",
+		location: "../templates/tsql.html"
+	},
+		{
+		frmwrkName: "ASP.NET",
+		location: "../templates/asp.html"
+	},
+		{
+		frmwrkName: "Bootstrap",
+		location: "../templates/bootstrap.html"
+	},
+		{
+		frmwrkName: "Misc",
+		location: "../templates/misc.html"
+	}
+	];
 });
 
 
