@@ -5,7 +5,7 @@
 		</div>
 		<div  class="row">
 		<div class="list-group col-lg-4 col-md-4 col-sm-4">
-		  <li class="animate-repeat" ng-repeat="framework in frameworks">
+		  <li class="animate-repeat" ng-repeat="framework in frameworks" style="list-style:none;">
     	  	<a ng-click="setSelectedFramework(framework)" data-ng-class=" {'active' : selectedFramework == framework}" class="list-group-item">{{framework.frmwrkName}}</a>
   		  </li>
 		</div>
