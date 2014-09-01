@@ -57,6 +57,9 @@ bioApp.controller('SoftwareController', function($scope){
     $scope.githubUrl = 'https://github.com/sincerelysleepy';
 };
 
+$scope.isHidden = false;
+
+
 
  	$scope.isActive = function isActive(path) {
 
@@ -119,8 +122,11 @@ bioApp.controller('SoftwareController', function($scope){
 	$scope.selectedFramework = $scope.frameworks[0];
 
 	$scope.setSelectedFramework = function(framework) {
+
+	$scope.isHidden = true;
     $scope.selectedFramework = framework;
-};
+
+    };
 
 });
 
