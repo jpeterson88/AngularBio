@@ -3,7 +3,8 @@
 var bioApp = angular.module('bioApp', [
   'ngRoute',
   'ui.bootstrap',
-  'ngAnimate'
+  'ngAnimate',
+  'ajoslin.promise-tracker'
 ]);
 
 bioApp.animation('.show-hide-animation', function() {
