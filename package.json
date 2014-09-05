@@ -1,0 +1,25 @@
+{
+  "name": "JustinsBio",
+  "version": "0.0.0",
+  "description": "Bio Page",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.8.7",
+    "nodemailer": "^1.2.1"
+  },
+  "engine": "node >=0.6.x",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sincerelysleepy/JustinsBio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sincerelysleepy/JustinsBio/issues"
+  },
+  "homepage": "https://github.com/sincerelysleepy/JustinsBio"
+}
