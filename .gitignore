@@ -4,3 +4,4 @@ static/bower_components
 
 #Ignore these files
 .DS_Store
+Procfile
