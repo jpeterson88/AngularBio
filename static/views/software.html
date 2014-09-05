@@ -1,0 +1,21 @@
+	<div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2"><h1>{{controllername}}  - </h1></div>
+			<div><h1><a href="{{githubUrl}}" ng-click="openTab()">Github</a></h1></div>
+		</div>
+		<div  class="row">
+		<div class="list-group col-lg-4 col-md-4 col-sm-4">
+		  <li class="animate-repeat" ng-repeat="framework in frameworks" style="list-style:none;">
+    	  	<a ng-click="setSelectedFramework(framework)" data-ng-class=" {'active' : selectedFramework == framework}" class="list-group-item">{{framework.frmwrkName}}</a>
+  		  </li>
+		</div>
+		<!--ng-hide="isHidden"-->
+		<div  class="show-hide-animation col-lg-4 col-md-4 col-sm-4">
+			<h3 >{{selectedFramework.description}}</h3>
+		</div>		
+		</div>
+
+
+		<!--button ng-click="isHidden=!isHidden">Button</button-->
+		
+	</div>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app=bioApp>
+    <head>
+    	<meta charset='utf-8'/>
+    	<meta name='viewport' content='width=device-width, initial-scale=1.0'/>    	                
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/yeti.css">
+        <title>Justin Peterson's Bio</title>
+    </head>
+
+	<body id="page">
+
+        <div class="container-fluid row headerpadbottom">
+            <div id='menu' class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderController">           
+                <div class="navbar-header">
+                  <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navcol">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">JP</a>
+                </div>
+                <div class="navbar-collapse collapse padleftdefault" id="navcol">
+                    <ul class='nav navbar-nav navbar-left'>
+                        <li data-ng-class="{'active' : isActive('/about')}" ><a href='#/about' ng-click="selectTab(1)">About</a></li>
+                        <li class="dropdown" data-ng-class="{'active' : isActive('/photography') || isActive('/software') || isActive('/gaming')}">
+                            <a class="dropdown-toggle" data-toggle="dropdown">Interests <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li data-ng-class="{'active' : isActive('/gaming')}"><a href="#/gaming">Gaming</a></li>
+                                <li data-ng-class="{'active' : isActive('/photography')}"><a href="#/photography">Photography</a></li>
+                                <li data-ng-class="{'active' : isActive('/software')}"><a href="#/software">Software Development</a></li>                              
+                            </ul>
+                        </li>
+                        <li data-ng-class="{'active' : isActive('/contact')}"><a href='#/contact'>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    	<div class="view-container container-fluid defaultpadtop col-lg-offset-1">
+          <div ng-view class="view-frame defaultpadleft defaultpadright"></div>
+        </div>
+
+
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="bower_components/greensock/src/minified/TweenMax.min.js"></script>
+        <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/promiseTracker.js"></script>
+        <script src="controllers/controllers.js"></script>
+        <script src="js/jquery-2.1.1.min.js"></script>
+    
+
+	</body>
+</html>
