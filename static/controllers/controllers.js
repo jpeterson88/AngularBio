@@ -45,7 +45,7 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
   };
 
   // Perform JSONP request.
-  $http.jsonp('response.json', config)
+  $http.post('/api/contact', config)
     .success(function(data, status, headers, config) {
       if (data.status == 'OK') {
         $scope.name = null;
