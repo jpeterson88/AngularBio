@@ -14,9 +14,10 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
 
 	$scope.controllername = 'Contact Me'
     $scope.subjectListOptions = {
-      'bug': 'Report a Bug',
-      'account': 'Account Problems',
-      'other': 'Other'
+      'inquire': 'General Question',
+      'comment' : 'Comment',
+      'bug': 'Report a Bug'
+
     };
 
 
@@ -90,28 +91,9 @@ bioApp.controller('HeaderController', function($scope, $location){
 });
 
 bioApp.controller('PhotographyController', function($scope){
+
+  
 $scope.controllername = 'Photography'
-
-
- $scope.photogInterval = 5000;
-  $scope.slides = [
-    {
-      image: '../images/cat.JPG',
-      text: "Hollywood Cat"
-    },
-    {
-      image: '../images/dock.JPG',
-      text: "Big Bear Sunset"
-    },
-    {
-      image: '../images/sunset.JPG',
-      text: "Desert Sunset"
-    },
-    {
-      image: '../images/dog2.JPG',
-      text: "Much Shibe, wow"
-    }
-  ];
 
 });
 
@@ -163,6 +145,10 @@ $scope.isHidden = false;
 		location: "../templates/wcf.html",
 		description: "WCF is used quite a bit in the .NET world from what I've seen. I'm not necessarily a huge fan but I work with it daily as we have several APIs that are setup using WCF around our custom CRM that communicate with other services."
 	},
+    {
+    frmwrkName: "node-js",
+    description: "Node is a new playing field for myself and I'm quickly learning to love it. This site is served up with node and several of my Restful APIs have been setup using node. Checkout my github repository for this site to see how I'm using node."
+  },
 		{
 		frmwrkName: "AngularJS",
 		location: "../templates/angular.html",
