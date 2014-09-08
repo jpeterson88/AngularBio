@@ -19,23 +19,24 @@ var transporter = nodemailer.createTransport({
 });
 
 router.post('/contact', function(req, res) {
-var htmlTpl = '<h4>Message from' + ' ' + req.body.params.name + '</h4><p><span>' + req.body.params.email + '</span</p><p>' + req.body.params.message + '</p>'; 
+var htmlTpl = '<h4>Message from' + ' ' + req.body.params.name + '</h4><p><span>' + req.body.params.email + '</span</p><p>' + req.body.params.comments + '</p>'; 
 
     mailOptions = {
         from: req.body.params.email,
         to: 'jpeter4223@gmail.com',
-        subject: re.body.params.subjectList,
-        html: htmlTpl,
-        debug: true
+        subject: req.body.params.subjectList,
+        html: htmlTpl
     };
 
     transporter.sendMail(mailOptions, function(error, response) {
         if(error) {
-            console.log(error)
+        	res.send({ success: false });
+            console.log(error);
         } else {
-            console.log(response.message);
+        	res.send({ success: true });
+            console.log('Mail sent Successfully!');
         }
-        smtpTransport.close();
+        transporter.close();
     });
 });
 

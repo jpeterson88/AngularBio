@@ -47,12 +47,12 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
   // Perform JSONP request.
   $http.post('/api/contact', config)
     .success(function(data, status, headers, config) {
-      if (data.status == 'OK') {
+      if (data.success) {
         $scope.name = null;
         $scope.email = null;
         $scope.subjectList = null;
         $scope.comments = null;
-        $scope.messages = 'Your form has been sent!';
+        $scope.messages = 'Your email was sent successfully!';
         $scope.submitted = false;
       } else {
         $scope.messages = 'Oops, we received your request, but there was an error.';
@@ -68,8 +68,17 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
   // Hide the status message which was set above after 3 seconds.
   $timeout(function() {
     $scope.messages = null;
-  }, 3000);
-}
+  }, 5000);
+};
+
+
+$scope.sub2 = function(){
+$http.get('/api/test')
+  .then(function(result) {
+    $scope.result = result.data;
+    })
+  };
+
 });
 
 bioApp.controller('HeaderController', function($scope, $location){
