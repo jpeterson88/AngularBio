@@ -1,39 +1,13 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-4">
-            <a href="#" class="thumbnail">
-            <img src="http://placehold.it/400x200" alt="..." />
-            </a>
-        </div>
-        <div class="col-xs-4">
-            <a href="#" class="thumbnail">
-            <img src="http://placehold.it/400x200" alt="..." />
-            </a>
-        </div>
-        <div class="col-xs-4">
-            <a href="#" class="thumbnail">
-            <img src="http://placehold.it/400x200" alt="..." />
-            </a>
-        </div>
-        <div class="col-xs-3">
-             <a href="#" class="thumbnail">
-            <img src="http://placehold.it/300x150" alt="..." />
-            </a>
-        </div>
-          <div class="col-xs-3">
-             <a href="#" class="thumbnail">
-            <img src="http://placehold.it/300x150" alt="..." />
-            </a>
-        </div>
-         <div class="col-xs-3">
-             <a href="#" class="thumbnail">
-            <img src="http://placehold.it/300x150" alt="..." />
-            </a>
-        </div>
-         <div class="col-xs-3">
-             <a href="#" class="thumbnail">
-            <img src="http://placehold.it/300x150" alt="..." />
-            </a>
-        </div>
+<div class="containter" >
+	<div>
+	<div><h1>{{controllername}}</h1></div>
+	
+		  <div ng-repeat="image in images">
+		    <div ng-click="openLightboxModal($index)" class="col-lg-3 col-md-4 col-sm-6 thumbmargin">
+		      <img ng-src="{{image.thumbUrl}}" class="img-thumbnail" alt="">
+		    </div>
+		  </div>
+		
     </div>
 </div>
+

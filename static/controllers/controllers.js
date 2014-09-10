@@ -90,10 +90,76 @@ bioApp.controller('HeaderController', function($scope, $location){
     };
 });
 
-bioApp.controller('PhotographyController', function($scope){
-
-  
+bioApp.controller('PhotographyController', function($scope, Lightbox){
 $scope.controllername = 'Photography'
+
+  $scope.images = [
+    {
+      url: '../images/cat.JPG',
+      thumbUrl: '../images/cat.JPG',
+      caption: "Hollywood Cat"
+    },
+    {
+      url: '../images/dock.JPG',
+      thumbUrl: '../images/dock.JPG',
+      caption: "Big Bear Sunset"
+    },
+    {
+      url: '../images/sunset.JPG',
+      thumbUrl: '../images/sunset.JPG',
+      caption: "Desert Sunset"
+    },
+    {
+      url: '../images/dog2.JPG',
+      thumbUrl: '../images/dog2.JPG',
+      caption: "Much Shibe, wow"
+    },
+        {
+          url: '../images/cat.JPG',
+      thumbUrl: '../images/cat.JPG',
+      caption: "Hollywood Cat"
+    },
+    {
+      url: '../images/dock.JPG',
+      thumbUrl: '../images/dock.JPG',
+      caption: "Big Bear Sunset"
+    },
+    {
+      url: '../images/sunset.JPG',
+      thumbUrl: '../images/sunset.JPG',
+      caption: "Desert Sunset"
+    },
+    {
+      url: '../images/dog2.JPG',
+      thumbUrl: '../images/dog2.JPG',
+      caption: "Much Shibe, wow"
+    },
+
+        {
+          url: '../images/cat.JPG',
+      thumbUrl: '../images/cat.JPG',
+      caption: "Hollywood Cat"
+    },
+    {
+      url: '../images/dock.JPG',
+      thumbUrl: '../images/dock.JPG',
+      caption: "Big Bear Sunset"
+    },
+    {
+      url: '../images/sunset.JPG',
+      thumbUrl: '../images/sunset.JPG',
+      caption: "Desert Sunset"
+    },
+    {
+      url: '../images/dog2.JPG',
+      thumbUrl: '../images/dog2.JPG',
+      caption: "Much Shibe, wow"
+    }
+  ];
+
+    $scope.openLightboxModal = function (index) {
+    Lightbox.openModal($scope.images, index);
+  };
 
 });
 
