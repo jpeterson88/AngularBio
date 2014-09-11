@@ -95,66 +95,109 @@ $scope.controllername = 'Photography'
 
   $scope.images = [
     {
-      url: '../images/cat.JPG',
-      thumbUrl: '../images/cat.JPG',
-      caption: "Hollywood Cat"
+      url: '../images/observatory2.JPG',
+      thumbUrl: '../images/observatory2.JPG',
+      caption: "Griffith Observatory Sunset"
     },
     {
-      url: '../images/dock.JPG',
-      thumbUrl: '../images/dock.JPG',
-      caption: "Big Bear Sunset"
+      url: '../images/docks.JPG',
+      thumbUrl: '../images/docks.JPG',
+      caption: "Big Bear Docks"
     },
     {
-      url: '../images/sunset.JPG',
-      thumbUrl: '../images/sunset.JPG',
-      caption: "Desert Sunset"
-    },
-    {
-      url: '../images/dog2.JPG',
-      thumbUrl: '../images/dog2.JPG',
-      caption: "Much Shibe, wow"
+      url: '../images/hollywood.JPG',
+      thumbUrl: '../images/hollywood.JPG',
+      caption: "Hollywood Sign"
     },
         {
-          url: '../images/cat.JPG',
-      thumbUrl: '../images/cat.JPG',
-      caption: "Hollywood Cat"
-    },
-    {
-      url: '../images/dock.JPG',
-      thumbUrl: '../images/dock.JPG',
-      caption: "Big Bear Sunset"
-    },
-    {
-      url: '../images/sunset.JPG',
-      thumbUrl: '../images/sunset.JPG',
+          url: '../images/desert.JPG',
+      thumbUrl: '../images/desert.JPG',
       caption: "Desert Sunset"
     },
     {
-      url: '../images/dog2.JPG',
-      thumbUrl: '../images/dog2.JPG',
-      caption: "Much Shibe, wow"
+      url: '../images/cityhall.JPG',
+      thumbUrl: '../images/cityhall.JPG',
+      caption: "Pasadena City Hall"
+    },
+    {
+      url: '../images/cat1.JPG',
+      thumbUrl: '../images/cat1.JPG',
+      caption: "Curious Cat Breaks Free"
     },
 
         {
-          url: '../images/cat.JPG',
-      thumbUrl: '../images/cat.JPG',
-      caption: "Hollywood Cat"
+          url: '../images/icecicle.JPG',
+      thumbUrl: '../images/icecicle.JPG',
+      caption: "Frost"
     },
     {
-      url: '../images/dock.JPG',
-      thumbUrl: '../images/dock.JPG',
-      caption: "Big Bear Sunset"
+      url: '../images/vines.JPG',
+      thumbUrl: '../images/vines.JPG',
+      caption: "Beanstalk"
     },
     {
-      url: '../images/sunset.JPG',
-      thumbUrl: '../images/sunset.JPG',
-      caption: "Desert Sunset"
+      url: '../images/gate.JPG',
+      thumbUrl: '../images/gate.JPG',
+      caption: "Before the Storm"
     },
     {
-      url: '../images/dog2.JPG',
-      thumbUrl: '../images/dog2.JPG',
-      caption: "Much Shibe, wow"
+      url: '../images/snow.JPG',
+      thumbUrl: '../images/snow.JPG',
+      caption: "Melting"
+    },
+
+    {
+          url: '../images/trees.JPG',
+      thumbUrl: '../images/trees.JPG',
+      caption: "Get Lost"
+    },
+    {
+      url: '../images/trails.JPG',
+      thumbUrl: '../images/trails.JPG',
+      caption: "Where it starts"
+    },
+    {
+      url: '../images/stump.JPG',
+      thumbUrl: '../images/stump.JPG',
+      caption: "Jagged"
+    },
+    {
+      url: '../images/sadie5.JPG',
+      thumbUrl: '../images/sadie5.JPG',
+      caption: "My pup posing"
+    },
+        {
+          url: '../images/sadie4.JPG',
+      thumbUrl: '../images/sadie4.JPG',
+      caption: "Getting Ready for Fall"
+    },
+
+    {
+      url: '../images/sadie2.JPG',
+      thumbUrl: '../images/sadie2.JPG',
+      caption: "Hurry Up!"
+    },
+        {
+      url: '../images/sadie3.JPG',
+      thumbUrl: '../images/sadie3.JPG',
+      caption: "Striking a Pose"
+    },
+    {
+      url: '../images/alie.JPG',
+      thumbUrl: '../images/alie.JPG',
+      caption: "Lazy Days"
+    },
+        {
+      url: '../images/cat2.JPG',
+      thumbUrl: '../images/cat2.JPG',
+      caption: "Blue Eyed Cat"
+    },
+        {
+      url: '../images/observatory.JPG',
+      thumbUrl: '../images/observatory.JPG',
+      caption: "Griffith Observatory"
     }
+
   ];
 
     $scope.openLightboxModal = function (index) {
