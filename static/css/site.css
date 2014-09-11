@@ -3,7 +3,7 @@
 .defaultpadright { margin-right: 30px; }
 .padleftdefault { margin-left: 100px; }
 .headerpadbottom { margin-bottom: 75px; }
-
+.tabletoheaderpadleft { margin-left: 16px; }
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 .thumbmargin { margin-bottom: 20px; padding-right: 20px; }
