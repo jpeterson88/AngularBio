@@ -7,3 +7,5 @@
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 
 .thumbmargin { margin-bottom: 20px; padding-right: 20px; }
+
+.navicon { width: 34px; height: 34px; margin-right: 6px; margin-top: 6px; }

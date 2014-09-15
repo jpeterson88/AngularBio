@@ -23,7 +23,7 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
 
 	$scope.controllername = 'Contact Me'
     $scope.subjectListOptions = {
-      'inquire': 'General Question',
+      'inquire': 'Question',
       'comment' : 'Comment',
       'bug': 'Report a Bug'
 
