@@ -30,10 +30,10 @@ var htmlTpl = '<h4>Message from' + ' ' + req.body.params.name + '</h4><p><span>'
 
     transporter.sendMail(mailOptions, function(error, response) {
         if(error) {
-        	res.send({ success: false; message: error });
+        	res.send({ success: false, message: error });
             console.log(error);
         } else {
-        	res.send({ success: true; message: 'Success.' });
+        	res.send({ success: true, message: 'Success.' });
             console.log('Mail sent Successfully!');
         }
         transporter.close();
