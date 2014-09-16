@@ -2,11 +2,81 @@
 	<div>
 	<div><h1>{{controllername}}</h1></div>
 	
-		  <div ng-repeat="image in images">
-		    <div ng-click="openLightboxModal($index)" class="col-lg-3 col-md-4 col-sm-6 thumbmargin">
-		      <img ng-src="{{image.thumbUrl}}" class="img-thumbnail" alt="">
+		  <div class="row">
+		    <ul ng-click="openLightboxModal($index)" ng-repeat="image in images" class="nopadul">
+		      <li class="cleanli"><img ng-src="{{image.thumbUrl}}" class="col-lg-3 col-md-4 col-sm-6 col-xs-6 pointercursor thumbmargin" alt=""></li>
 		    </div>
-		  </div>		
+		  </ul>		
     </div>
 </div>
+
+
+
+<!-- <div class="container">
+    <div class="row">
+        <div class="text-center">
+            <div><h1>{{controllername}}</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive"
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h9.jpg" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive"
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h8.jpg" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive" 
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h4.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive"
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h7.jpg" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive" a
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h3.jpg" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive" 
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h6.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive" 
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h1.jpg" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive" 
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h2.jpg" />
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="well">
+                    <img class="thumbnail img-responsive"
+                        src="http://www.prepbootstrap.com/Content/images/shared/houses/h5.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  -->
 
