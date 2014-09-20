@@ -105,7 +105,7 @@ bioApp.config(function ($routeProvider, $locationProvider) {
         redirectTo: '/about'
       });
 
-$locationProvider.html5Mode(true);
+      $locationProvider.html5Mode(true);
 
-      
+
     });
