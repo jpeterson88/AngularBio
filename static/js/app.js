@@ -76,7 +76,7 @@ bioApp.config(function (LightboxProvider) {
 
 
 
-bioApp.config(function ($routeProvider, $locationProvider) {
+bioApp.config(function ($routeProvider) {
     $routeProvider.when('/', {
         templateUrl: 'views/about.html',
         controller: 'AboutController'
@@ -105,7 +105,7 @@ bioApp.config(function ($routeProvider, $locationProvider) {
         redirectTo: '/about'
       });
 
-      $locationProvider.html5Mode(true);
+   /*   $locationProvider.html5Mode(true);*/
 
 
     });

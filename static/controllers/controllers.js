@@ -3,7 +3,7 @@
 bioApp.controller('AboutController', function($scope){
 $scope.imageUrl = "images/justin_boston.jpg";
 $scope.aboutMe = "Welcome to my personal page. I created this site to practice some web technologies I have been working with. My hope is to also give you a glimpse into my life as a software developer and show you the things that mean most to me. You can find all of the code for this site on github as well as other future project! Feel free to send me a message for any inquiries or questions. Enjoy!"
-
+$scope.backgroundImageUrl = "url(../images/bostonbg.png)"
 
 });
 
@@ -16,6 +16,8 @@ bioApp.controller('GamingController', function($scope){
   $scope.pcSpecs = [
    'I7-2600K 3.4 GHz', 'NVidia GeForce GTX 660 Ti', 'RAM 16 GB', 'Razer DeathAdder', 'Generic Logitech Wireless Keyboard','250 GB INTEL SSD SC2MH250A2', '1 TB WDC WD10EZEX'
   ];
+
+  $scope.backgroundImageUrl = "url(../images/mlgbg.jpg)"
 
 });
 
@@ -30,7 +32,7 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
     };
 
 
-
+  $scope.backgroundImageUrl = "url(../images/vinesbg.jpg)"
 
 	$scope.submit = function(form) {
   // Trigger validation flag.
@@ -101,6 +103,7 @@ bioApp.controller('HeaderController', function($scope, $location){
 
 bioApp.controller('PhotographyController', function($scope, Lightbox){
 $scope.controllername = 'Photography'
+$scope.backgroundImageUrl = "url(..images/lakebg.jpg)"
 
   $scope.images = [
     {

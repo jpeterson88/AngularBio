@@ -48,8 +48,10 @@
             </div>
         </div>
 
-    	<div class="view-container container-fluid col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-          <div ng-view class="view-frame reveal-animation"></div>
+<!-- col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1-->
+    	<div class="view-container container-fluid">
+
+          <div ng-view class="hero view-frame reveal-animation" ng-style="{'background-image':'{{backgroundImageUrl}}'}"></div>
         </div>
 
 
