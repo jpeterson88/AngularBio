@@ -3,7 +3,23 @@
 bioApp.controller('AboutController', function($scope){
 $scope.imageUrl = "images/justin_boston.jpg";
 $scope.aboutMe = "Welcome to my personal page. I created this site to practice some web technologies I have been working with. My hope is to also give you a glimpse into my life as a software developer and show you the things that mean most to me. You can find all of the code for this site on github as well as other future project! Feel free to send me a message for any inquiries or questions. Enjoy!"
-$scope.backgroundImageUrl = "url(../images/bostonbg.png)"
+
+
+$scope.bgImageStyle = {
+    
+    "background-image" : "url(../images/bostonbg.png)",
+    'background-size': 'cover',
+    'background-repeat' : 'no-repeat',
+    'position': 'fixed',
+    'top' : '0',
+    'left' : '0',
+    'right' : '0',
+    'bottom' : '0',
+    'z-index' : '-1',
+     '-webkit-background-size': 'cover',
+  '-moz-background-size' : 'cover',
+  '-o-background-size': 'cover'
+};
 
 });
 
@@ -17,7 +33,22 @@ bioApp.controller('GamingController', function($scope){
    'I7-2600K 3.4 GHz', 'NVidia GeForce GTX 660 Ti', 'RAM 16 GB', 'Razer DeathAdder', 'Generic Logitech Wireless Keyboard','250 GB INTEL SSD SC2MH250A2', '1 TB WDC WD10EZEX'
   ];
 
-  $scope.backgroundImageUrl = "url(../images/mlgbg.jpg)"
+  $scope.bgImageStyle = {
+    
+    "background-image" : "url(../images/mlgbg.jpg)",
+    'background-size': 'cover',
+    'background-repeat' : 'no-repeat',
+    'position': 'fixed',
+    'top' : '0',
+    'left' : '0',
+    'right' : '0',
+    'bottom' : '0',
+    'z-index' : '-1',
+     '-webkit-background-size': 'cover',
+  '-moz-background-size' : 'cover',
+  '-o-background-size': 'cover'
+};
+
 
 });
 
@@ -32,7 +63,22 @@ bioApp.controller('ContactController', function($scope, $http, $log, promiseTrac
     };
 
 
-  $scope.backgroundImageUrl = "url(../images/vinesbg.jpg)"
+
+    $scope.bgImageStyle = {
+    
+    "background-image" : "url(../images/vinebg.jpg)",
+    'background-size': 'cover',
+    'background-repeat' : 'no-repeat',
+    'position': 'fixed',
+    'top' : '0',
+    'left' : '0',
+    'right' : '0',
+    'bottom' : '0',
+    'z-index' : '-1',
+     '-webkit-background-size': 'cover',
+  '-moz-background-size' : 'cover',
+  '-o-background-size': 'cover'
+};
 
 	$scope.submit = function(form) {
   // Trigger validation flag.
@@ -103,7 +149,25 @@ bioApp.controller('HeaderController', function($scope, $location){
 
 bioApp.controller('PhotographyController', function($scope, Lightbox){
 $scope.controllername = 'Photography'
-$scope.backgroundImageUrl = "url(..images/lakebg.jpg)"
+
+
+
+
+    $scope.bgImageStyle = {
+    
+    "background-image" : "url(../images/lakebg.jpg)",
+    'background-size': 'cover',
+    'background-repeat' : 'no-repeat',
+    'position': 'fixed',
+    'top' : '0',
+    'left' : '0',
+    'right' : '0',
+    'bottom' : '0',
+    'z-index' : '-1',
+     '-webkit-background-size': 'cover',
+  '-moz-background-size' : 'cover',
+  '-o-background-size': 'cover'
+};
 
   $scope.images = [
     {

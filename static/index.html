@@ -12,7 +12,7 @@
     </head>
 
 	<body id="page">
-
+<div>
         <div class="container-fluid row headerpadbottom">
             <div id='menu' class="navbar navbar-default navbar-fixed-top" ng-controller="HeaderController">           
                 <div class="navbar-header">
@@ -35,8 +35,6 @@
                         <li data-ng-class="{'active' : isActive('/contact')}"><a href='/contact'>Contact</a></li>
                     </ul>
 
-
-
                     <div class="navbar-right padrightdefault">
                         <a href="http://www.github.com/sincerelysleepy"><img class="navicon" src="images/githubicon.ico"></a>
                         <a href="http://www.twitter.com/sincerelysleepy"><img class="navicon " src="images/twitter.png"></a>
@@ -50,7 +48,6 @@
 
 <!-- col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1-->
     	<div class="view-container container-fluid">
-
           <div ng-view class="hero view-frame reveal-animation" ></div>
         </div>
 

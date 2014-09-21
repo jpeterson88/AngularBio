@@ -1,23 +1,25 @@
-<div class="container col-lg-6 col-md-6 col-sm-6">
+<div  ng-style="{{bgImageStyle}}"></div>
+
+<div class="container whiteDiv col-lg-6 col-md-6 col-sm-6">
 	<h1>{{controllername}}</h1>
 	  <div id="messages" class="alert alert-success" data-ng-show="messages" data-ng-bind="messages"></div>
   <div data-ng-show="progress.active()" style="color: red; font-size: 50px;">Sending&hellip;</div>
 <form name="helpForm" novalidate role="form">
     <div class="form-group">
-      <label for="name">Your Name </label>
+      <label for="name"> Name </label>
       <span class="label label-danger" data-ng-show="submitted && helpForm.name.$error.required">Required!</span>
       <input type="text" name="name" data-ng-model="name" class="form-control" required />
     </div>
 
     <div class="form-group">
-      <label for="email">Your E-mail address</label>
+      <label for="email">E-mail address</label>
       <span class="label label-danger" data-ng-show="submitted && helpForm.email.$error.required">Required!</span>
       <span class="label label-danger" data-ng-show="submitted && helpForm.$error.email">Invalid email!</span>
       <input type="email" name="email" data-ng-model="email" class="form-control" required />  
     </div>
 
     <div class="form-group">
-      <label for="subjectList">What is the nature of your request?</label>
+      <label for="subjectList">Inquiry Reason</label>
       <span class="label label-danger" data-ng-show="submitted && helpForm.subjectList.$error.required">Required!</span>
       <select name="subjectList" data-ng-model="subjectList" data-ng-options="id as value for (id, value) in subjectListOptions" class="form-control" required>
 
