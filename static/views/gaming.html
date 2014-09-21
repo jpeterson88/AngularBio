@@ -1,13 +1,13 @@
 
-    <div class="container col-lg-6 col-md-6 col-sm-6" >
-        <div ><h1>{{controllername}}</h1></div>
+    <div class="container col-lg-6  col-lg-6 col-md-6 col-sm-6 col-xs-6" >
+        <div ><h1 class="light-header">{{controllername}}</h1></div>
         <div>
-        	{{history}}
+            <h3>{{history}}</h3>        	
         </div>
-        <h3>PC Specs</h2>
+        <h1>PC Specs</h1>
         <ul ng-repeat="spec in pcSpecs">
-        	<li>{{spec}}</li>
+        	<h3><li>{{spec}}</li></h3>
         </ul>
 
-        <a href="http://www.twitch.tv/sincerelysleepy"><img class="navicon" src="images/twitchico.png"></a>
+        <!--a href="http://www.twitch.tv/sincerelysleepy"><img class="navicon" src="images/twitchico.png"></a-->
     </div>

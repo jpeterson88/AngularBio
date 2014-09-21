@@ -8,7 +8,7 @@
 
 .thumbmargin { margin-bottom: 20px; padding-right: 20px; }
 
-.navicon { width: 34px; height: 34px; margin-right: 6px; margin-top: 6px; }
+.navicon { width: 34px; height: 34px; margin-right: 6px; margin-top: 9px; }
 
 .pointercursor {
     cursor: pointer;
@@ -23,9 +23,21 @@ body{ background-image : url(../images/personalbw.jpg);
 }
 
 body *{
-  color : white;
+  color : #EEEEEE;
+  font-family: 'Josefin Slab', serif;
 }
+
 
 .accordionColor *{
   color: black;
 }
+
+.light-header{
+font-size: 84px; 
+font-weight: 100;
+  color : #EEEEEE;
+font-family: 'Josefin Slab', serif;
+}
+
+
+
