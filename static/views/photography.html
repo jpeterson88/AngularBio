@@ -1,11 +1,11 @@
-<div class="container" >
-	<div>
-	<div class="text-center"><h1>{{controllername}}</h1></div>
+<div class="container">
+	<div class="col-lg-7 cl-md-7 ">
+	<div><h1>{{controllername}}</h1></div>
 	
 		  <div class="row">
 		    <div ng-click="openLightboxModal($index)" ng-repeat="image in images">
-			    <div class="col-md-4">
-	                <div class="well">
+			    <div class="col-lg-5 col-md-5">
+	                <div class="thumbnail">
 	                    <img class="img-responsive pointercursor"  src="{{image.thumbUrl}}" />
 	                </div>
 	            </div> 
