@@ -27,3 +27,14 @@
 .whiteDiv * {
   color: white;
 }
+
+    
+   body{ background-image : url(../images/personalgrain.jpg);
+    background-size: cover;
+    background-repeat : no-repeat;
+    position': fixed;
+}
+
+body *{
+  color : black;
+}
