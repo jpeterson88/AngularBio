@@ -23,3 +23,7 @@
       .pointercursor {
           cursor: pointer;
       }
+
+.restrictedImage {
+    max-height: 50px;
+}

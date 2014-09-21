@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/site.css">
         <link rel="stylesheet" href="css/yeti.css">
         <link rel="stylesheet" href="css/animation.css">
-        <link rel="stylesheet" href="css/angular-bootstrap-lightbox.css">
+        
         <title>Justin Peterson's Bio</title>
         <base href="/">
     </head>
@@ -25,7 +25,7 @@
                     <ul class='nav navbar-nav navbar-left'>
                         <li data-ng-class="{'active' : isActive('/about')}" ><a href='/about' ng-click="selectTab(1)">About</a></li>
                         <li class="dropdown" data-ng-class="{'active' : isActive('/photography') || isActive('/software') || isActive('/gaming')}">
-                            <a class="dropdown-toggle" data-toggle="dropdown">Interests <span class="caret"></span></a>
+                            <a class="dropdown-toggle" >Interests <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li data-ng-class="{'active' : isActive('/gaming')}"><a href="/gaming">Gaming</a></li>
                                 <li data-ng-class="{'active' : isActive('/photography')}"><a href="/photography">Photography</a></li>
