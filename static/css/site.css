@@ -24,17 +24,17 @@
           cursor: pointer;
       }
 
-.whiteDiv * {
-  color: white;
-}
-
     
-   body{ background-image : url(../images/personalgrain.jpg);
+   body{ background-image : url(../images/personalbw.jpg);
     background-size: cover;
     background-repeat : no-repeat;
     position': fixed;
 }
 
 body *{
-  color : black;
+  color : white;
+}
+
+.accordionColor *{
+  color: black;
 }

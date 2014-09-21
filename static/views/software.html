@@ -1,16 +1,10 @@
-	<div class="container" > 
-		<div class="row" >
-			<div class="col-lg-6 col-md-6 col-sm-2"><h1>{{controllername}}</h1></div>
-		</div>
-		<div  class="row">
-		<div class="list-group col-lg-6 col-md-6 col-sm-4">
-		  <li ng-repeat="framework in frameworks" class="tabletoheaderpadleft my-animation"  style="list-style:none;">
-    	  	<a ng-click="setSelectedFramework(framework)" data-ng-class=" {'active' : selectedFramework == framework}" class="list-group-item pointercursor">{{framework.frmwrkName}}</a>
-  		  </li>
-		</div>
-		<!--ng-hide="isHidden"-->
-		<!--div  class="show-hide-animation col-lg-4 col-lg-offset-1 col-md-5 col-sm-4">
-			<h3 >{{selectedFramework.description}}</h3>
-		</div-->		
-		</div>
-	</div>
+
+<div class="container col-lg-4 col-md-6 col-sm-2">
+<accordion close-others="oneAtATime" class="accordionColor">
+    <accordion-group heading="{{framework.name}}"  ng-repeat="framework in frameworks">
+    <div >
+        {{framework.description}}
+    </div>
+    
+    </accordion-group>
+  </accordion></div>
