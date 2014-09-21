@@ -10,25 +10,16 @@
 
 .navicon { width: 34px; height: 34px; margin-right: 6px; margin-top: 6px; }
 
-
-      .nopadul {         
-          padding:0 0 0 0;
-          margin:0 0 0 0;
-      }
-      .cleanli {     
-          list-style:none;
-          margin-bottom:25px;
-          margin-right:25px;           
-      }
-      .pointercursor {
-          cursor: pointer;
-      }
+.pointercursor {
+    cursor: pointer;
+}
 
     
-   body{ background-image : url(../images/personalbw.jpg);
+body{ background-image : url(../images/personalbw.jpg);
     background-size: cover;
     background-repeat : no-repeat;
-    position': fixed;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 body *{
