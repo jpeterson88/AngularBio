@@ -24,14 +24,9 @@
                 <div class="navbar-collapse collapse padleftdefault" id="navcol">
                     <ul class='nav navbar-nav navbar-left'>
                         <li data-ng-class="{'active' : isActive('/about')}" ><a href='/about' ng-click="selectTab(1)">About</a></li>
-                        <li class="dropdown" data-ng-class="{'active' : isActive('/photography') || isActive('/software') || isActive('/gaming')}">
-                            <a class="dropdown-toggle" >Interests <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li data-ng-class="{'active' : isActive('/gaming')}"><a href="/gaming">Gaming</a></li>
-                                <li data-ng-class="{'active' : isActive('/photography')}"><a href="/photography">Photography</a></li>
-                                <li data-ng-class="{'active' : isActive('/software')}"><a href="/software">Software Development</a></li>                              
-                            </ul>
-                        </li>
+                        <li data-ng-class="{'active' : isActive('/gaming')}"><a href="/gaming">Gaming</a></li>
+                        <li data-ng-class="{'active' : isActive('/photography')}"><a href="/photography">Photography</a></li>
+                        <li data-ng-class="{'active' : isActive('/software')}"><a href="/software">Software</a></li>
                         <li data-ng-class="{'active' : isActive('/contact')}"><a href='/contact'>Contact</a></li>
                     </ul>
 
