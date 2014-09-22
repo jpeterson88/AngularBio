@@ -5,6 +5,8 @@
 .headerpadbottom { margin-bottom: 75px; }
 .tabletoheaderpadleft { margin-left: 16px; }
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.headerpadbottom2 { margin-bottom: 30px; }
+
 
 .thumbmargin { margin-bottom: 20px; padding-right: 20px; }
 
