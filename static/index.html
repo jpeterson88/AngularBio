@@ -15,40 +15,40 @@
     </head>
 
 	<body id="page" >
-<div>
-        <div class="container-fluid row headerpadbottom">
-            <div id='menu' class="navbar navbar-default center navbar-fixed-top nav-font" ng-controller="HeaderController">           
-                <div>
-                    <div class="navbar-header">
 
-                    <!--Button is for dorpdown when screen is too small -->
-                      <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navcol">
-                        <span class="glyphicon glyphicon-chevron-down"></span>
-                      </button>
+        <div class="container-fluid  headerpadbottom row">
+            <div id='menu' class="navbar navbar-default center navbar-fixed-top nav-font " ng-controller="HeaderController">           
+                
+                <div class="navbar-header">
 
-                      <a class="navbar-brand" href="/">JP</a>
+                <!--Button is for dorpdown when screen is too small -->
+                  <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navcol">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </button>
+
+                  <a class="navbar-brand" href="/">JP</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navcol">
+                    <ul class='nav navbar-nav'>
+                        <li data-ng-class="{'active' : isActive('/about')}" ><a href='/about' ng-click="selectTab(1)">About</a></li>
+                        <li data-ng-class="{'active' : isActive('/gaming')}"><a href="/gaming">Gaming</a></li>
+                        <li data-ng-class="{'active' : isActive('/photography')}"><a href="/photography">Photography</a></li>
+                        <li data-ng-class="{'active' : isActive('/software')}"><a href="/software">Software</a></li>
+                        <li data-ng-class="{'active' : isActive('/contact')}"><a href='/contact'>Contact</a></li>
+                    </ul>
+
+                    <div class="navbar-right">
+                        <a href="http://www.github.com/sincerelysleepy"><img class="navicon" src="images/githubicon.ico"></a>
+                        <a href="http://www.twitter.com/sincerelysleepy"><img class="navicon " src="images/twitter.png"></a>
+                        <a href="http://www.Facebook.com/sincerelysleepy"><img class="navicon"  src="images/fbi.png"></a>
+                        <a href="http://www.instagram.com/justinm_peterson"><img class="navicon" src="images/instagramicon.png"></a>                        
                     </div>
-                    <div class="navbar-collapse collapse" id="navcol">
-                        <ul class='nav navbar-nav'>
-                            <li data-ng-class="{'active' : isActive('/about')}" ><a href='/about' ng-click="selectTab(1)">About</a></li>
-                            <li data-ng-class="{'active' : isActive('/gaming')}"><a href="/gaming">Gaming</a></li>
-                            <li data-ng-class="{'active' : isActive('/photography')}"><a href="/photography">Photography</a></li>
-                            <li data-ng-class="{'active' : isActive('/software')}"><a href="/software">Software</a></li>
-                            <li data-ng-class="{'active' : isActive('/contact')}"><a href='/contact'>Contact</a></li>
-                        </ul>
 
-                        <div class="navbar-right">
-                            <a href="http://www.github.com/sincerelysleepy"><img class="navicon" src="images/githubicon.ico"></a>
-                            <a href="http://www.twitter.com/sincerelysleepy"><img class="navicon " src="images/twitter.png"></a>
-                            <a href="http://www.Facebook.com/sincerelysleepy"><img class="navicon"  src="images/fbi.png"></a>
-                            <a href="http://www.instagram.com/justinm_peterson"><img class="navicon" src="images/instagramicon.png"></a>                        
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        
+
 
 
     	<div class="view-container container-fluid col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 ">
