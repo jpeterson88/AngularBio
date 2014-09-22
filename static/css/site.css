@@ -49,3 +49,10 @@ accordion *{
   font-weight: 400;
   color : black;
 }
+
+.light-header-large{
+  font-size: 60px; 
+font-weight: 400;
+color : #EEEEEE;
+font-family: 'Josefin Slab', serif;
+}
