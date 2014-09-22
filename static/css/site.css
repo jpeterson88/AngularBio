@@ -14,8 +14,12 @@ body{ background-image : url(../images/personalbw.jpg);
     background-repeat : no-repeat;
     background-attachment: fixed;
     background-position: center; 
-     font-family: 'Robot', sans-serif;
+     font-family: 'Pontano Sans', sans-serif;
     
+}
+
+.nav li{
+  font-size: 18px;
 }
 
 div.inline {
