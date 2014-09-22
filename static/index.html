@@ -16,11 +16,14 @@
 <div>
         <div class="container-fluid row headerpadbottom">
             <div id='menu' class="navbar navbar-default center navbar-fixed-top" ng-controller="HeaderController">           
-                <div class="navbar-inner">
+                <div>
                     <div class="navbar-header">
+
+                    <!--Button is for dorpdown when screen is too small -->
                       <button class="btn navbar-toggle" data-toggle="collapse" data-target="#navcol">
                         <span class="glyphicon glyphicon-chevron-down"></span>
                       </button>
+
                       <a class="navbar-brand" href="/">JP</a>
                     </div>
                     <div class="navbar-collapse collapse" id="navcol">
@@ -32,7 +35,7 @@
                             <li data-ng-class="{'active' : isActive('/contact')}"><a href='/contact'>Contact</a></li>
                         </ul>
 
-                        <div class="navbar-right padrightdefault">
+                        <div class="navbar-right">
                             <a href="http://www.github.com/sincerelysleepy"><img class="navicon" src="images/githubicon.ico"></a>
                             <a href="http://www.twitter.com/sincerelysleepy"><img class="navicon " src="images/twitter.png"></a>
                             <a href="http://www.Facebook.com/sincerelysleepy"><img class="navicon"  src="images/fbi.png"></a>
@@ -45,7 +48,7 @@
         </div>
     </div>
 
-<!-- -->
+
     	<div class="view-container container-fluid col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 ">
           <div ng-view class="hero view-frame reveal-animation " ></div>
         </div>

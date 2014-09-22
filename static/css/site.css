@@ -1,5 +1,5 @@
 .defaultpadtop { margin-top: 75px; }
-.defaultpadleft { margin-left: 30px; }
+.defaultpadleft { padding-left: 100px; }
 .defaultpadright { margin-right: 30px; }
 .padleftdefault { margin-left: 140px; }
 .headerpadbottom { margin-bottom: 75px; }
@@ -24,13 +24,26 @@ body{ background-image : url(../images/personalbw.jpg);
     background-position: center; 
 }
 
-.navbar.center .navbar-inner {
-    text-align: center;
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
 }
 
-.navbar.center .navbar-inner .nav {
-    display:inline-block;
-    float: none;
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+*{
+  font-family: 'Josefin Slab', serif;
 }
 
 .light-header{
@@ -45,6 +58,7 @@ font-family: 'Josefin Slab', serif;
   font-weight: 400;
   color : #EEEEEE;
 }
+
 
 .jose-the-black{  
   font-family: 'Josefin Slab', serif;
