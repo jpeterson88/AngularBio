@@ -42,8 +42,8 @@ body{ background-image : url(../images/personalbw.jpg);
     }
 }
 
-*{
-  font-family: 'Josefin Slab', serif;
+.nav-font *{
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .light-header{
