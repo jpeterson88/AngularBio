@@ -1,7 +1,7 @@
 .defaultpadtop { margin-top: 75px; }
 .defaultpadleft { margin-left: 30px; }
 .defaultpadright { margin-right: 30px; }
-.padleftdefault { margin-left: 100px; }
+.padleftdefault { margin-left: 140px; }
 .headerpadbottom { margin-bottom: 75px; }
 .tabletoheaderpadleft { margin-left: 16px; }
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
@@ -23,6 +23,7 @@ body{ background-image : url(../images/personalbw.jpg);
     background-attachment: fixed;
     background-position: center; 
 }
+
 
 
 
