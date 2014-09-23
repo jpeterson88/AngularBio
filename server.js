@@ -7,6 +7,11 @@ var nodemailer = require('nodemailer');
 app.use(express.static(__dirname + '/static'));
 app.use( bodyParser.json());
 
+app.all('/*', function(req, res, next) {
+    // Just send the index.html for other files to support HTML5Mode
+    res.sendfile('static/index.html', { root: __dirname });
+});
+
 app.listen(process.env.PORT || 5000);
 
 
