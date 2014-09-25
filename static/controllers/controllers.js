@@ -2,7 +2,7 @@
 
 bioApp.controller('AboutController', function($scope){
 $scope.imageUrl = "images/justin_boston.jpg";
-$scope.aboutMe = "Welcome to my personal page. I created this site to practice some web technologies I have been working with. My hope is to also give you a glimpse into my life as a software developer and show you the things that mean most to me. You can find all of the code for this site on github as well as my other future project! Feel free to send me a message for any inquiries or questions. Enjoy!"
+$scope.aboutMe = "Welcome to my personal page. I created this site to practice some web technologies I have been working with. My hope is to also give you a glimpse into my life as a software developer and show you the things that mean most to me. You can find all of the code for this site on github as well as my other future projects! Feel free to send me a message for any inquiries or questions. Enjoy!"
 $scope.test = "Software Developer & Aspiring Photographer"
 
 });
