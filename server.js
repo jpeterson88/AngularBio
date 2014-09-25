@@ -7,13 +7,13 @@ var nodemailer = require('nodemailer');
 app.use(express.static(__dirname + '/static'));
 app.use( bodyParser.json());
 
-app.all('/*', function(req, res, next) {
-    // Just send the index.html for other files to support HTML5Mode
-    res.sendfile('static/index.html', { root: __dirname });
-});
-
 app.listen(process.env.PORT || 5000);
 
+
+app.get('/[^\.]+$', function(req, res){
+    res.set('Content-Type', 'text/html')
+        .sendfile(__dirname + '/static/index.html');
+});
 
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
@@ -48,5 +48,6 @@ var htmlTpl = '<h4>Message from' + ' ' + req.body.params.name + '</h4><p><span>'
 router.get('/test', function(req, res) {
 	res.json({ message: 'hooray! welcome to our api!' });	
 });
+
 
 app.use('/api', router);
