@@ -12,7 +12,7 @@ bioApp.controller('GamingController', function($scope){
 
 	$scope.controllername = 'Gaming'
   $scope.history1 = 'Gaming has and always will play a role in my life. I grew up playing different variations of games. At 4 years old I recall beating my older brother and all of his friends at any game we would play. I fell in love with the Zelda franchise when Ocarina of Time hit N64 and have been a die hard Zelda fan ever since. I got heavily into Starcraft and CS 1.6 during my middle school and high school days.'
-  $scope.history2 = 'At 22 I quit my job to pursue a career as a professional gamer playing SC2. I moved to Romania where I played professionally in a team house for 3.5 months. After Romania I decided that progaming was not what I wanted to do and began my career as a software developer. Now, as a casual gamer, I play Hearthstone, a little bit of Starcraft and League of Legends.'
+  $scope.history2 = 'At 22 I quit my job to pursue a career as a professional gamer playing SC2. I moved to Romania where I played professionally in a team house for 3.5 months. After Romania I decided that pro gaming was not what I wanted to do and began my career as a software developer. Now, as a casual gamer, I play Hearthstone, a little bit of Starcraft and League of Legends.'
   $scope.pcSpecs = [
    'I7-2600K 3.4 GHz', 'NVidia GeForce GTX 660 Ti', 'RAM 16 GB', 'Razer DeathAdder', 'Generic Logitech Wireless Keyboard','250 GB INTEL SSD SC2MH250A2', '1 TB WDC WD10EZEX'
   ];
