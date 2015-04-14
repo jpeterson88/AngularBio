@@ -18,8 +18,8 @@ app.get('/[^\.]+$', function(req, res){
 var transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'jpeter4223@gmail.com',
-        pass: 'emtxixjhztdnzwnh'
+        user: '',
+        pass: ''
     }
 });
 
